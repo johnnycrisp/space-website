@@ -63,6 +63,7 @@ h5 {
   font-family: $font-secondary;
   font-size: 16px;
   letter-spacing: 2.7;  
+  color: $color-white;
 }
 
 @mixin body-text {
@@ -84,12 +85,12 @@ h5 {
 @mixin nav-tabs {
   @include nav-text();
   &:active {
-    border-bottom: 41px solid $color-white;
+    border-bottom: 3px solid $color-white;
     color: $color-white;
   }
 
     &:hover {
-      border-bottom: 41px solid $color-light;
+      border-bottom: 3px solid $color-light;
       color: $color-light;
     }
 

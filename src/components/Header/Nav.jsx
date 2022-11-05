@@ -6,12 +6,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Logo from '../../assets/shared/logo.svg'
+import '../../index.scss'
+import './nav.scss'
 
 function OffcanvasExample() {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="transparent" expand={expand} className="mb-3">
           <Container fluid>
             <Navbar.Brand href="#home">
             <div className="logo__container">
@@ -35,11 +37,11 @@ function OffcanvasExample() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">00 HOME</Nav.Link>
-                  <Nav.Link href="#action2"> 01 DESTINATION</Nav.Link>
-                  <Nav.Link href="#action1">02 CREW</Nav.Link>
-                  <Nav.Link href="#action2">03 TECHNOLOGY</Nav.Link>
+                <Nav className="nav__links justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link className="nav__link" href="#action1">00 HOME</Nav.Link>
+                  <Nav.Link className="nav__link" href="#action2"> 01 DESTINATION</Nav.Link>
+                  <Nav.Link className="nav__link" href="#action1">02 CREW</Nav.Link>
+                  <Nav.Link className="nav__link" href="#action2">03 TECHNOLOGY</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

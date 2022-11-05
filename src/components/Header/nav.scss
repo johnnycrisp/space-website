@@ -1,13 +1,5 @@
-.logo__container {
-    background: $color-white;
-    border-radius: 50%;
-    height: 48px;
-    width: 48px;
+@import '../../index.scss';
 
-    &:after {
-        content: '';
-        width: 473px;
-        height: 1px;
-        background-color: $color-white;
-    }
+.nav__link {
+    @include nav-tabs;
 }

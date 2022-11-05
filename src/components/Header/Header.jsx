@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 
 const Header = () => {
   return (
-    <div>
+    <div className="header__container">
         <Nav />
     </div>
   )
