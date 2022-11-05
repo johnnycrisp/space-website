@@ -1,0 +1,96 @@
+@import "~bootstrap/scss/bootstrap";
+
+// Colors
+
+$color-dark: #0B0D17;
+$color-light: #D0D6F9;
+$color-white: #FFFFFF;
+
+
+// Fonts 
+
+$font-primary: 'Bellefair',
+serif;
+
+$font-secondary: 'Barlow Condensed',
+sans-serif;
+  
+//Headings
+
+h1 {
+  font-family: $font-primary;
+  font-size: 150px;
+}
+
+h2 {
+  font-family: $font-primary;
+  font-size: 100px;
+}
+
+h3 {
+  font-family: $font-primary;
+  font-size: 56px;
+}
+
+h4 {
+  font-family: $font-primary;
+  font-size: 32px;
+}
+
+h5 {
+  font-family: $font-secondary;
+  font-size: 28px;
+  letter-spacing: 4.75;
+
+}
+
+//Subheadings 
+
+@mixin subheading-1 {
+  font-family: $font-primary;
+  font-size: 28px;
+} 
+
+@mixin subheading-2 {
+  font-family: $font-secondary;
+  font-size: 14px;
+  letter-spacing: 2.35;
+}
+
+// Types 
+
+@mixin nav-text {
+  font-family: $font-secondary;
+  font-size: 16px;
+  letter-spacing: 2.7;  
+}
+
+@mixin body-text {
+  font-family: $font-primary;
+  font-size: 18px;  
+  line-height: 32;
+}
+
+@mixin button-main {
+  height: 274px;
+  width: 274px;
+  border-radius: 50%;
+  background-color: $color-white;
+    &:hover {
+      border: 88px solid $color-light;
+    }
+}
+
+@mixin nav-tabs {
+  @include nav-text();
+  &:active {
+    border-bottom: 41px solid $color-white;
+    color: $color-white;
+  }
+
+    &:hover {
+      border-bottom: 41px solid $color-light;
+      color: $color-light;
+    }
+
+}

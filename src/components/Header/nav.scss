@@ -1,0 +1,13 @@
+.logo__container {
+    background: $color-white;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+
+    &:after {
+        content: '';
+        width: 473px;
+        height: 1px;
+        background-color: $color-white;
+    }
+}
