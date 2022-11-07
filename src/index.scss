@@ -20,6 +20,7 @@ sans-serif;
 h1 {
   font-family: $font-primary;
   font-size: 150px;
+  color: $color-white;
 }
 
 h2 {
@@ -63,7 +64,7 @@ h5 {
   font-family: $font-secondary;
   font-size: 16px;
   letter-spacing: 2.7;  
-  color: $color-white;
+  color: $color-light;
 }
 
 @mixin body-text {
@@ -72,14 +73,16 @@ h5 {
   line-height: 32;
 }
 
+//Buttons
+
 @mixin button-main {
   height: 274px;
   width: 274px;
   border-radius: 50%;
   background-color: $color-white;
-    &:hover {
-      border: 88px solid $color-light;
-    }
+    // &:hover {
+    //   border: 88px solid $color-light;
+    // }
 }
 
 @mixin nav-tabs {

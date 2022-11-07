@@ -2,4 +2,44 @@
 
 .nav__link {
     @include nav-tabs;
+     padding-top: 89px;
+     position: relative;
 }
+
+#offcanvasNavbar-expand-sm {
+    width: 67%;
+
+    .btn-close {
+        color: white;
+    }
+
+    .nav__link {
+        padding-top: 32px;
+        padding-left: 32px;
+    }
+}
+
+.navbar-dark {
+    --bs-navbar-toggler-border-color: none;
+}
+
+.offcanvas {
+    background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+}
+
+@media screen and (min-width: 375px) {
+
+.links__wrapper {
+        height: 96px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        width: 60%;
+
+    }
+
+}
+
