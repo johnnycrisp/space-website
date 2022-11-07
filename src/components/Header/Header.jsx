@@ -1,12 +1,12 @@
 import React from 'react'
 import './header.scss'
-import Nav from './Nav'
 import Container from 'react-bootstrap/Container'
+import Nav from '../Nav/Nav'
 
 const Header = () => {
   return (
     <div className="header__container">
-        <Nav />
+        {/* <Nav /> */}
         <Container className="hero__wrapper">
         <h5>SO YOU WANT TO TRAVEL TO</h5>
         <h1>SPACE</h1>

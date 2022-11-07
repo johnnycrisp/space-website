@@ -1,4 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+// @import-normalize;
+
+
+a {
+  list-style: none;
+
+}
 
 // Colors
 
@@ -16,6 +23,10 @@ $font-secondary: 'Barlow Condensed',
 sans-serif;
   
 //Headings
+
+p {
+  font-family: $font-secondary;
+}
 
 h1 {
   font-family: $font-primary;
@@ -48,15 +59,16 @@ h5 {
 //Subheadings 
 
 @mixin subheading-1 {
-  font-family: $font-primary;
-  font-size: 28px;
-} 
-
-@mixin subheading-2 {
   font-family: $font-secondary;
   font-size: 14px;
   letter-spacing: 2.35;
 }
+@mixin subheading-2 {
+  font-family: $font-primary;
+  font-size: 28px;
+} 
+
+
 
 // Types 
 
@@ -64,7 +76,8 @@ h5 {
   font-family: $font-secondary;
   font-size: 16px;
   letter-spacing: 2.7;  
-  color: $color-light;
+  border-bottom: 3px solid transparent;
+  // color: $color-light;
 }
 
 @mixin body-text {

@@ -1,13 +1,21 @@
 @import '../../index.scss';
 
+// .navbar {
+//     position: absolute;
+//     top: 50px;
+// }
+
 .nav__link {
     @include nav-tabs;
      padding-top: 89px;
-     position: relative;
+    //  position: relative;
+     color: $color-white;
 }
 
 #offcanvasNavbar-expand-sm {
     width: 67%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
 
     .btn-close {
         color: white;
@@ -16,6 +24,7 @@
     .nav__link {
         padding-top: 32px;
         padding-left: 32px;
+        color: white;
     }
 }
 
@@ -23,10 +32,10 @@
     --bs-navbar-toggler-border-color: none;
 }
 
-.offcanvas {
-    background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(40.7742px);
-}
+// .offcanvas {
+//         background: rgba(255, 255, 255, 0.04);
+//         backdrop-filter: blur(40.7742px);
+// }
 
 @media screen and (min-width: 375px) {
 

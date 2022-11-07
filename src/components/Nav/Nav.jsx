@@ -13,7 +13,7 @@ function OffcanvasExample() {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar key={expand} bg="transparent" expand={expand} className="navbar-dark mb-3"> <div className="links__wrapper"></div>
+        <Navbar fixed="top" key={expand} bg="transparent" expand={expand} className="navbar-dark mb-3"> <div className="links__wrapper"></div>
           <Container fluid>
             <Navbar.Brand href="#home">
             <div className="logo__container">

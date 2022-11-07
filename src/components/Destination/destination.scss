@@ -1,0 +1,77 @@
+
+@import '../../index.scss';
+
+.destination__wrapper {
+    background: 
+        url(../../assets/destination/background-destination-mobile.jpg) 
+        center / 100% 100% border-box no-repeat;
+    height: 100%;
+    min-height: 100vh;
+    padding: 75px 24px 0 24px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image__container {
+        height: 170px;
+        width: 170px;
+
+        img {
+            height: 100%;
+            width: auto;
+            margin-left: 40%;
+            margin-top: 32px;
+            margin-bottom: 2px;
+        }
+    }
+}
+
+ h5 {
+     text-align: center;
+     font-size: 16px;
+     color: $color-light;
+
+     span {
+        margin-right: 8px;
+        opacity: 0.25;
+     }
+ }
+
+.nav__links {
+    
+    justify-content: center;
+    margin-top: 45px;
+
+    .nav__link {
+    @include nav-tabs;
+    color: $color-white;
+    
+    }
+}
+
+h2 {
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 15px;
+    color: $color-light;
+    text-align: center;
+}
+
+.sub-head-1 {
+    @include subheading-1;
+}
+
+.sub-head-2 {
+    @include subheading-2;
+}
+
+hr {
+    height: 1px;
+    color: $color-light;
+}
