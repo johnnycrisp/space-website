@@ -17,7 +17,7 @@ const Technology = () => {
                 <Button className="nav-btn-lg">2</Button>
                 <Button className="nav-btn-lg">3</Button>
             </div>
-            <div className="tech__info">
+            <div className="tech__info mb-4">
                 <p className="sub-head-1">THE TERMINOLOGY...</p>
                 <p className="sub-head-2">LAUNCH VEHICLE</p>
                 <p className="tech__text">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>

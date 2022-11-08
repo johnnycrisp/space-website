@@ -55,7 +55,17 @@
     font-size: 56px;
     text-align: center;
     margin-top: 20px;
+
+
 }
+
+// .planet__info {
+//     width: 100%;
+// }
+
+ .planet__text {
+     max-width: 334px;
+ }
 
 p {
     font-size: 15px;
@@ -77,6 +87,28 @@ p {
 }
 
 hr {
-    height: 1px;
-    color: $color-light;
+    height: 2px;
+    background-color: $color-light;
+}
+
+@media screen and (min-width: 575px) {
+    
+.destination__header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+    .dest__info {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+        h5 {
+            text-align: left;
+            font-size: 16px;
+        }
+
+
 }

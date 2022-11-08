@@ -27,7 +27,7 @@
 
 hr  {
     margin-top: 0;
-    height: 1px;
+    height: 2px;
     color: $color-light;
 }
 
@@ -70,5 +70,12 @@ hr  {
 }
 
 .crew__info {
-    margin-bottom: 104px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.crew__text {
+    max-width: 334px;
 }

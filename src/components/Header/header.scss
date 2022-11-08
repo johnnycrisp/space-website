@@ -57,6 +57,26 @@
             align-items: center;
             justify-content: center;
             padding: 56px 24px 0 24px;
+
+            .hero__text {
+                max-width: 334px;
+            }
         }
   
+}
+
+
+@media screen and (min-width: 575px) {
+    .header__container {
+            background:
+            url(../../assets/home/background-home-tablet.jpg) center / 100% 100% border-box no-repeat;
+            height: 100%;
+            min-height: 100vh;
+    }
+
+    .hero__wrapper h5 {
+        margin-top: 106px; 
+    }
+
+
 }

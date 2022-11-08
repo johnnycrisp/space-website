@@ -1,9 +1,11 @@
 @import '../../index.scss';
 
-// .navbar {
-//     position: absolute;
-//     top: 50px;
-// }
+nav {
+    // padding-top: 0;
+        .container-fluid {
+            padding-left: 24px;
+        }
+}
 
 .nav__link {
     @include nav-tabs;
@@ -13,8 +15,8 @@
 }
 
 #offcanvasNavbar-expand-sm {
-    width: 67%;
-    background: rgba(255, 255, 255, 0.04);
+    width: 55%;
+    background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(40.7742px);
 
     .btn-close {
@@ -24,6 +26,7 @@
     .nav__link {
         padding-top: 32px;
         padding-left: 32px;
+        padding-bottom: 32px;
         color: white;
     }
 }
@@ -37,18 +40,43 @@
 //         backdrop-filter: blur(40.7742px);
 // }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 575px) {
 
-.links__wrapper {
-        height: 96px;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(40.7742px);
-        position: absolute;
-        top: 40px;
-        left: 50%;
-        width: 60%;
+    nav {
+                padding-top: 0 !important;
+                padding-right: 0 !important;
+    
+            .container-fluid {
+                padding-left: 24px;
+                padding-right: 0;
+            }
+        }
 
+#offcanvasNavbar-expand-sm {
+        max-width: 65%;
+        backdrop-filter: blur(50px);
     }
+
+
+.nav__link a {
+        padding-top: 0px;
+        padding-left: 32px;
+        padding-bottom: 32px;
+        color: white;
+    }
+
+.nav__links {
+    margin-top: 0;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+        .nav__link {
+                
+                //  position: relative;
+                color: $color-white;
+            }
+
 
 }
 

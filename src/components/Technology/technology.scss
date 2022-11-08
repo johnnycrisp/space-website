@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     .image__container {
         display: flex;
@@ -52,4 +53,15 @@
         // &:hover {
         //     border: 2px solid white;
         // }
+}
+
+.tech__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech__text {
+    max-width: 334px;
 }
