@@ -14,18 +14,17 @@
     align-items: center;
 
     .image__container {
-        height: 170px;
-        width: 170px;
-
-        img {
-            height: 100%;
-            width: auto;
-            margin-left: 40%;
+            display: flex;
+            justify-content: center;
             margin-top: 32px;
             margin-bottom: 2px;
+    
+            img {
+                height: 170px;
+                width: 170px;
+            }
         }
     }
-}
 
  h5 {
      text-align: center;
@@ -45,12 +44,13 @@
 
     .nav__link {
     @include nav-tabs;
-    color: $color-white;
-    
+    color: $color-light;
+
+
     }
 }
 
-h2 {
+.planet__header {
     color: white;
     font-size: 56px;
     text-align: center;
@@ -69,6 +69,11 @@ p {
 
 .sub-head-2 {
     @include subheading-2;
+    
+}
+
+.dest__info {
+    margin-bottom: 58px;
 }
 
 hr {
