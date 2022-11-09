@@ -8,11 +8,12 @@ const Header = () => {
     <div className="header__container">
         {/* <Nav /> */}
         <Container className="hero__wrapper">
-        <h5>SO YOU WANT TO TRAVEL TO</h5>
+        <div className="hero__info"><h5>SO YOU WANT TO TRAVEL TO</h5>
         <h1>SPACE</h1>
-        <p className="hero__text">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
-        <div className="button-background">
-        <button className="btn-main">EXPLORE</button></div>
+        <p className="hero__text">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p></div>
+        <div className="btn__wrapper">
+        <button className="btn-main">EXPLORE</button>
+        </div>
         </Container>
     </div>
   )

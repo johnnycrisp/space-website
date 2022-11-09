@@ -7,15 +7,18 @@ import IMG from '../../assets/technology/image-launch-vehicle-landscape.jpg';
 const Technology = () => {
   return (
     <div className="tech__wrapper">
-        <Container>
-            <h5 className="crew__header"><span>03</span>SPACE LAUNCH 101</h5>
+        {/* <div className="tech__header-container"> */}
+            <h5 className="tech__header"><span>03</span>SPACE LAUNCH 101</h5>
             <div className="image__container">
                 <img src={IMG} alt="IMG NAME" />
             </div>
+        {/* </div> */}
+            
+        <Container>
             <div className="nav-btn-list-lg">
-                <Button className="nav-btn-lg">1</Button>
-                <Button className="nav-btn-lg">2</Button>
-                <Button className="nav-btn-lg">3</Button>
+                <Button variant="outline-light" className="nav-btn-lg">1</Button>
+                <Button variant="outline-light" className="nav-btn-lg">2</Button>
+                <Button  variant="outline-light"className="nav-btn-lg">3</Button>
             </div>
             <div className="tech__info mb-4">
                 <p className="sub-head-1">THE TERMINOLOGY...</p>

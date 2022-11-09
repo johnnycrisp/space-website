@@ -65,3 +65,34 @@
 .tech__text {
     max-width: 334px;
 }
+
+@media screen and (min-width: 575px) {
+
+    .tech__wrapper {
+
+        align-items: flex-start;
+
+            .image__container {
+                align-self: center;
+                img {
+                
+                height: 310px;
+                width: 100vw;
+            }}
+            
+            
+            
+    }
+
+@media screen and (min-width: 768px) {
+
+    .tech__wrapper {
+
+        .container {
+
+            
+        }
+    }
+    
+    }
+}
