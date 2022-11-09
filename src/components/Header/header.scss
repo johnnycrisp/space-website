@@ -57,6 +57,7 @@
             align-items: center;
             justify-content: center;
             padding: 56px 24px 0 24px;
+            height: 100vh;
 
             .hero__text {
                 max-width: 334px;
@@ -91,7 +92,7 @@
         .hero__wrapper {
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: center;
         padding: 3rem;
     }
 

@@ -137,9 +137,10 @@ hr {
                 flex-direction: row;
                 display: flex;
                 justify-content: space-around;
+                align-items: center;
 
                 .image__container {
-                    align-self: flex-end;
+                   
                     padding: 3rem;
                   
                 }   
