@@ -19,11 +19,11 @@ const Technology = ({tech}) => {
   }, []);
 
   return (
-    <div className="tech__wrapper">
+    <div id="technology" className="tech__wrapper">
         <div className="tech__header-container">
             <h5 className="tech__header"><span>03</span>SPACE LAUNCH 101</h5>
             <div className="image__container">
-                <img src={matches && terminology === '0' ? tech[terminology].imgP : tech[terminology].imgL }
+                <img src={matches ? tech[terminology].imgP : tech[terminology].imgL }
                 alt={tech[terminology].name} />
             </div>
         </div>

@@ -110,6 +110,11 @@ input {
   border-radius: 0;
 }
 
+a, a:visited, a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #000;
+}
+
 // Colors
 
 $color-dark: #0B0D17;

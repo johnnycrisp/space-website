@@ -13,7 +13,8 @@ function OffcanvasExample() {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar fixed="top" key={expand} bg="transparent" expand={expand} className="navbar-dark mb-3 pl-3 pt-0">
+        <Navbar  collapseOnSelect
+        as="nav" fixed="top" key={expand} bg="transparent" expand={expand} className="navbar-dark mb-3 pl-3 pt-0">
           <Container fluid>
             <Navbar.Brand href="#home">
             <div className="logo__container">
@@ -38,10 +39,10 @@ function OffcanvasExample() {
               <Offcanvas.Body>
               
                 <Nav className="nav__links justify-content-end flex-grow-1 mt-0">
-                  <Nav.Link className="nav__link" href="#action1">00 HOME</Nav.Link>
-                  <Nav.Link className="nav__link" href="#action2"> 01 DESTINATION</Nav.Link>
-                  <Nav.Link className="nav__link" href="#action3">02 CREW</Nav.Link>
-                  <Nav.Link className="nav__link" href="#action4">03 TECHNOLOGY</Nav.Link>
+                  <Nav.Link className="nav__link" href="#home">00 HOME</Nav.Link>
+                  <Nav.Link className="nav__link" href="#destination"> 01 DESTINATION</Nav.Link>
+                  <Nav.Link className="nav__link" href="#crew">02 CREW</Nav.Link>
+                  <Nav.Link className="nav__link" href="#technology">03 TECHNOLOGY</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

@@ -9,7 +9,7 @@ const Crew = ({crew}) => {
 
 
   return (
-    <div className="crew__wrapper">
+    <div id='crew' className="crew__wrapper">
         
          <h5 className="crew__header"><span>02</span>MEET YOUR CREW</h5>
         <Container className="mb-0">

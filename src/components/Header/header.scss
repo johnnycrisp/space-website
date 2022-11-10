@@ -28,7 +28,7 @@
         font-size: 15px;
     }
 
-    button.btn-main {
+  button.btn-main {
         @include button-main;
         height: 150px;
         width: 150px;
@@ -91,8 +91,8 @@
         
         .hero__wrapper {
         flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
+        justify-content: space-around;
+        align-items: center;
         padding: 3rem;
     }
 

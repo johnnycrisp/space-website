@@ -9,9 +9,8 @@ const Destination = ({planets}) => {
 
   const [planet, setPlanet] = useState(0);
 
-
   return (
-    <div className="destination__wrapper">
+    <div id="destination" className="destination__wrapper">
         
             <h5 className="destination__header"><span>01</span>PICK YOUR DESTINATION</h5>
             <Container>
