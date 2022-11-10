@@ -91,8 +91,8 @@
         
         .hero__wrapper {
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-end;
         padding: 3rem;
     }
 

@@ -71,13 +71,16 @@
     .tech__wrapper {
 
         align-items: flex-start;
+        width: 100vw;
 
             .image__container {
                 align-self: center;
+                height: 310px;
+                width: 100vw;
                 img {
                 
                 height: 310px;
-                width: 100vw;
+                width: 100%;
             }}
             
             
@@ -94,7 +97,7 @@
                 order: 0;
                 justify-content: end;
                 margin-right: -24px;
-                max-width: 42%;
+                width: 515px;
                 height: 55%;
 
                 img {

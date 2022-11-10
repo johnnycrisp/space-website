@@ -1,31 +1,45 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './technology.scss';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import IMG from '../../assets/technology/image-launch-vehicle-landscape.jpg';
 
-const Technology = () => {
+
+const Technology = ({tech}) => {
+
+    const [terminology, setTerminology] = useState('0');
+
+    const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  )
+
+  useEffect(() => {
+    window
+    .matchMedia("(min-width: 768px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+  }, []);
+
   return (
     <div className="tech__wrapper">
-        {/* <div className="tech__header-container"> */}
+        <div className="tech__header-container">
             <h5 className="tech__header"><span>03</span>SPACE LAUNCH 101</h5>
             <div className="image__container">
-                <img src={IMG} alt="IMG NAME" />
+                <img src={matches && terminology === '0' ? tech[terminology].imgP : tech[terminology].imgL }
+                alt={tech[terminology].name} />
             </div>
-        {/* </div> */}
+        </div>
             
         <Container>
            
             <div className="tech__info mb-4"> 
             <div className="nav-btn-list-lg">
-                <Button variant="outline-light" className="nav-btn-lg">1</Button>
-                <Button variant="outline-light" className="nav-btn-lg">2</Button>
-                <Button  variant="outline-light" className="nav-btn-lg">3</Button>
+                <Button onClick={() => setTerminology('0')} variant="outline-light" className="nav-btn-lg">1</Button>
+                <Button onClick={() => setTerminology('1')}  variant="outline-light" className="nav-btn-lg">2</Button>
+                <Button onClick={() => setTerminology('2')}   variant="outline-light" className="nav-btn-lg">3</Button>
             </div>
             <div className="tech__info-inner">
                 <p className="sub-head-1">THE TERMINOLOGY...</p>
-                <p className="sub-head-2">LAUNCH VEHICLE</p>
-                <p className="tech__text">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                <p className="sub-head-2">{tech[terminology].name}</p>
+                <p className="tech__text">{tech[terminology].text}</p>
 
 
             </div>

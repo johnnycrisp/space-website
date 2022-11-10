@@ -85,6 +85,7 @@ hr  {
         .crew__wrapper {
 
             align-items: flex-start;
+            justify-content: flex-end;
 
                 .container {
 
@@ -99,10 +100,17 @@ hr  {
                     display: none;
                 }
 
-                    img {
+                    .img__container {
                         
-                        width: 60%;
-                        height: auto;
+                        height: 532px;
+                        width: 450px;
+
+                        img {
+                           height: 100%; 
+                           width: auto;
+                           overflow: hidden;
+                        } 
+                        
                     }
 
                 }
@@ -123,12 +131,13 @@ hr  {
                         justify-content: space-around;
 
                         .image__container {
-                            width: 40%;
-                            height: auto;
+                            width: 450px;
+                            height: 600px;
 
                             img {
                                 width: 100%;
                                 height: auto;
+                                overflow: hidden;
                             }
                         }
                         .crew__info {

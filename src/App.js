@@ -1,14 +1,24 @@
 import React from 'react'
-import './index.scss';
-import Header from './components/Header/Header';
+import './index.scss'
+import Header from './components/Header/Header'
 import Destination from './components/Destination/Destination'
-import Nav from './components/Nav/Nav';
-import Crew from './components/Crew/Crew';
-import Technology from './components/Technology/Technology';
+import Nav from './components/Nav/Nav'
+import Crew from './components/Crew/Crew'
+import Technology from './components/Technology/Technology'
 import IMGMOON from './assets/destination/image-moon.png'
 import IMGMARS from './assets/destination/image-mars.png'
 import IMGEUROPA from './assets/destination/image-europa.png'
 import IMGTITAN from './assets/destination/image-titan.png'
+import IMGMARK from './assets/crew/image-mark-shuttleworth.png'
+import IMGVICTOR from './assets/crew/image-victor-glover.png'
+import IMGANOUSHEH from './assets/crew/image-anousheh-ansari.png'
+import IMG1L from './assets/technology/image-launch-vehicle-landscape.jpg'
+import IMG1P from './assets/technology/image-launch-vehicle-portrait.jpg'
+import IMG2L from './assets/technology/image-space-capsule-landscape.jpg'
+import IMG2P from './assets/technology/image-space-capsule-portrait.jpg'
+import IMG3L from './assets/technology/image-spaceport-landscape.jpg'
+import IMG3P from './assets/technology/image-spaceport-portrait.jpg'
+
 
 const PLANETS = [
     {
@@ -44,7 +54,51 @@ const PLANETS = [
       travelTime: '7 YEARS'
     }
   ];
+  
+  const CREW = [
+    {
+      role: 'MISSION SPECIALIST',
+      id: 1,
+      name: 'MARK SHUTTLEWORTH',
+      img: IMGMARK,
+      text: 'Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.'
+    },
+    {
+      role: 'PILOT',
+      id: 2,
+      name: 'VICTOR GLOVER',
+      img: IMGVICTOR,
+      text: 'Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. '
+    },
+    {
+      role: 'FLIGHT ENGINEER',
+      id: 3,
+      name: 'ANOUSHEH ANSARI',
+      img: IMGANOUSHEH,
+      text: 'Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.'
+    },
+  ];
 
+  const TECH = [
+    {
+      name: 'LAUNCH VEHICLE',
+      text: `A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!`,
+      imgL: IMG1L,
+      imgP: IMG1P
+    },
+    {
+      name: 'SPACEPORT',
+      text: `A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.`,
+      imgL: IMG3L,
+      imgP: IMG3P
+    },
+    {
+      name: 'SPACE CAPSULE',
+      text: `A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.`,
+      imgL: IMG2L,
+      imgP: IMG2P
+    }
+  ];
 function App() {
 
   return (
@@ -52,8 +106,8 @@ function App() {
       <Nav />
       <Header />
       <Destination planets={PLANETS} />
-      <Crew />
-      <Technology />
+      <Crew crew={CREW} />
+      <Technology tech={TECH}/>
     </div>
   );
 }
