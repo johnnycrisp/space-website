@@ -1,9 +1,7 @@
-import Button from 'react-bootstrap/Button';
+import React from 'react'
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Logo from '../../assets/shared/logo.svg'
 import '../../index.scss'
@@ -13,8 +11,7 @@ function OffcanvasExample() {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar  collapseOnSelect
-        as="nav" fixed="top" key={expand} bg="transparent" expand={expand} className="navbar-dark mb-3 pl-3 pt-0">
+        <Navbar fixed="top" key={expand} bg="transparent" expand={expand} className="navbar-dark mb-3">
           <Container>
             <Navbar.Brand href="#home">
             <div className="logo__container">
