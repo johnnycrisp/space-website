@@ -209,12 +209,16 @@ h5 {
 
 @mixin nav-tabs {
   @include nav-text();
+
+ border: none;
+
   &:active {
     border-bottom: 3px solid $color-white;
     color: $color-white;
   }
 
     &:hover {
+     
       border-bottom: 3px solid $color-light;
       color: $color-light;
     }

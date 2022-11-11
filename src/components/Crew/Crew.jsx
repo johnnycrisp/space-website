@@ -5,8 +5,16 @@ import IMG from '../../assets/crew/image-douglas-hurley.png'
 
 const Crew = ({crew}) => {
   
-  const [crewmember, setCrewmember] = useState('0');
-
+  const [crewmember, setCrewmember] = useState(0);
+  
+   const checkMember = (number) => { 
+    if(crewmember === number){
+      return "nav-btn-sm active";
+    } else {
+      return "nav-btn-sm";
+    }
+   }
+  
 
   return (
     <div id='crew' className="crew__wrapper">
@@ -22,9 +30,9 @@ const Crew = ({crew}) => {
             
             <div className="crew__info mb-4">
             <ul className="nav-btn-list-sm">
-                <li className="nav-btn-sm" onClick={()=> setCrewmember('0')}></li>
-                <li className="nav-btn-sm" onClick={()=> setCrewmember('1')}></li>
-                <li className="nav-btn-sm" onClick={()=> setCrewmember('2')}></li>
+                <li className={checkMember(0)} onClick={()=> setCrewmember(0)}></li>
+                <li className={checkMember(1)} onClick={()=> setCrewmember(1)}></li>
+                <li className={checkMember(2)} onClick={()=> setCrewmember(2)}></li>
             </ul>
             <div className="crew__member-info"> <p className="sub-head-1">{crew[crewmember].role}</p>
             <p className="sub-head-2">{crew[crewmember].name}</p>

@@ -5,11 +5,19 @@ import Button from 'react-bootstrap/Button';
 
 const Technology = ({tech}) => {
 
-    const [terminology, setTerminology] = useState('0');
+    const [terminology, setTerminology] = useState(0);
 
     const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
   )
+
+  const checkTech = (number) => { 
+    if(terminology === number){
+      return "nav-btn-lg active";
+    } else {
+      return "nav-btn-lg";
+    }
+   }
 
   useEffect(() => {
     window
@@ -26,9 +34,9 @@ const Technology = ({tech}) => {
             </div>
             <div className="tech__info mb-4"> 
             <div className="nav-btn-list-lg">
-                <Button onClick={() => setTerminology('0')} variant="outline-light" className="nav-btn-lg">1</Button>
-                <Button onClick={() => setTerminology('1')}  variant="outline-light" className="nav-btn-lg">2</Button>
-                <Button onClick={() => setTerminology('2')}   variant="outline-light" className="nav-btn-lg">3</Button>
+                <Button onClick={() => setTerminology(0)} variant="outline-light" className={checkTech(0)}>1</Button>
+                <Button onClick={() => setTerminology(1)}  variant="outline-light" className={checkTech(1)}>2</Button>
+                <Button onClick={() => setTerminology(2)}   variant="outline-light" className={checkTech(2)}>3</Button>
             </div>
             <div className="tech__info-inner">
                 <p className="sub-head-1">THE TERMINOLOGY...</p>

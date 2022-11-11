@@ -9,6 +9,14 @@ const Destination = ({planets}) => {
 
   const [planet, setPlanet] = useState(0);
 
+  const checkPlanet = (number) => { 
+    if(planet === number){
+      return "active nav__link nav-link";
+    } else {
+      return "nav__link nav-link";
+    }
+   }
+
   return (
     <div id="destination" className="destination__wrapper">
         
@@ -20,10 +28,10 @@ const Destination = ({planets}) => {
              <div className="planet__info-all">
                     <div className="planet__info">
                       <Nav className="nav__links">
-                        <Button variant="btn-outline" className="nav__link nav-link" onClick={() => setPlanet(0)} >MOON</Button>
-                        <Button variant="btn-outline" className="nav__link nav-link" onClick={() => setPlanet(1)} >MARS</Button>
-                        <Button variant="btn-outline" className="nav__link nav-link" onClick={() => setPlanet(2)} >EUROPA</Button>
-                        <Button variant="btn-outline" className="nav__link nav-link" onClick={() => setPlanet(3)} >TITAN</Button>
+                        <Button variant="btn-outline" className={checkPlanet(0)} onClick={() => setPlanet(0)} >MOON</Button>
+                        <Button variant="btn-outline" className={checkPlanet(1)} onClick={() => setPlanet(1)} >MARS</Button>
+                        <Button variant="btn-outline" className={checkPlanet(2)} onClick={() => setPlanet(2)} >EUROPA</Button>
+                        <Button variant="btn-outline" className= {checkPlanet(3)} onClick={() => setPlanet(3)} >TITAN</Button>
                       </Nav>
                       <h2 className="planet__header">{planets[planet].name}</h2>
                       <p className="planet__text">{planets[planet].text}</p>
