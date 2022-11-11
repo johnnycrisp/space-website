@@ -51,6 +51,7 @@ nav {
             .container-fluid {
                 padding-left: 24px;
                 padding-right: 0;
+                margin-top: 0;
                
             }
         }
@@ -58,6 +59,10 @@ nav {
 #offcanvasNavbar-expand-sm {
         max-width: 65%;
         backdrop-filter: blur(50px);
+
+        & .nav__link:last-child {
+                padding-right: 2rem;
+            }
     }
 
 
@@ -73,13 +78,16 @@ nav {
     margin-bottom: 12px;
     display: flex;
     align-items: center;
-}
+
+   
+
         .nav__link {
                 
                 //  position: relative;
                 color: $color-white;
+              
             }
-
+}
 
 }
 
