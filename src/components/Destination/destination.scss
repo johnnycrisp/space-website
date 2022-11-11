@@ -144,8 +144,36 @@ hr {
                 .image__container {
                    
                     padding: 3rem;
+                    width: 40%;
+                    
+
+                    img {
+                       min-height: 300px;
+                       min-width: 300px;
+                       max-height: 400px;
+                       width: 100%;
+                       height: auto;
+                    }
                   
                 }   
+
+                .planet__info {
+                    .planet__header {
+                        align-self: flex-start;
+                    }
+
+                    .planet__text {
+                        text-align: left;
+                    }
+
+                    .nav__links {
+                        align-self: flex-start;
+
+                        & button:first-child {
+                            padding-left: 0;
+                        }
+                    }
+                }
     }
    }
 

@@ -87,8 +87,8 @@ const PLANETS = [
       imgP: IMG1P
     },
     {
-      name: 'SPACEPORT',
-      text: `A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.`,
+      name: 'SPACE PORT',
+      text: `A space port or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.`,
       imgL: IMG3L,
       imgP: IMG3P
     },

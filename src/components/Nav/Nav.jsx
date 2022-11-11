@@ -15,7 +15,7 @@ function OffcanvasExample() {
       {['sm'].map((expand) => (
         <Navbar  collapseOnSelect
         as="nav" fixed="top" key={expand} bg="transparent" expand={expand} className="navbar-dark mb-3 pl-3 pt-0">
-          <Container fluid>
+          <Container>
             <Navbar.Brand href="#home">
             <div className="logo__container">
                 <img 

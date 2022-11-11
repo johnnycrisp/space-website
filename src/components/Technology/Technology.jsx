@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './technology.scss';
-import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
 
@@ -20,16 +19,11 @@ const Technology = ({tech}) => {
 
   return (
     <div id="technology" className="tech__wrapper">
-        <div className="tech__header-container">
             <h5 className="tech__header"><span>03</span>SPACE LAUNCH 101</h5>
             <div className="image__container">
                 <img src={matches ? tech[terminology].imgP : tech[terminology].imgL }
                 alt={tech[terminology].name} />
             </div>
-        </div>
-            
-        <Container>
-           
             <div className="tech__info mb-4"> 
             <div className="nav-btn-list-lg">
                 <Button onClick={() => setTerminology('0')} variant="outline-light" className="nav-btn-lg">1</Button>
@@ -46,7 +40,6 @@ const Technology = ({tech}) => {
                
             </div>
                 
-        </Container>
     </div>
   )
 }

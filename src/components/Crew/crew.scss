@@ -120,7 +120,7 @@ hr  {
                 }
     }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 995px) {
     
             .crew__wrapper {
             
@@ -144,9 +144,15 @@ hr  {
                             flex-direction: column-reverse;
                             padding: 3rem;
                             text-align: left;
+                            width: 45%;
 
                             p {
                                 text-align: left;
+                            }
+
+                            .sub-head-2 {
+                                font-size: 56px;
+                                line-height: normal;
                             }
 
                             ul {
