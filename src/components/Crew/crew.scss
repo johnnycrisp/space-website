@@ -120,7 +120,7 @@ hr  {
                 }
     }
 
-        @media screen and (min-width: 995px) {
+        @media screen and (min-width: 768px) {
     
             .crew__wrapper {
             
@@ -128,13 +128,15 @@ hr  {
 
                         flex-direction: row-reverse;
                         align-items: end;
-                        justify-content: space-around;
+                        justify-content: space-between;
 
                         .image__container {
                             width: 450px;
                             height: 600px;
+                            min-width: 36%;
 
                             img {
+                                
                                 width: 100%;
                                 height: auto;
                                 overflow: hidden;
@@ -144,7 +146,6 @@ hr  {
                             flex-direction: column-reverse;
                             padding: 3rem;
                             text-align: left;
-                            width: 45%;
 
                             p {
                                 text-align: left;
