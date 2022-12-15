@@ -1,7 +1,7 @@
-import React, { forwardRef } from 'react'
+import React from 'react'
 import './header.scss'
 import Container from 'react-bootstrap/Container'
-import Nav from '../Nav/Nav'
+// import Nav from '../Nav/Nav'
 
 
 

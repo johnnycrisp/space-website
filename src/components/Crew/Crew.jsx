@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './crew.scss'
 import Container from 'react-bootstrap/Container';
-import IMG from '../../assets/crew/image-douglas-hurley.png'
+// import IMG from '../../assets/crew/image-douglas-hurley.png'
 
 const Crew = ({crew}) => {
   
